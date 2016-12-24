@@ -11,19 +11,14 @@ operations one can perform are:
 
 ## Format
 • Input: 3 positive integers m, n, d where m ≥ n, d (see examples below for input format)
-• Output: Algorithm should be run in the order of BFS, DFS. Print the algorithm you use. Each
-search algorithm should then output an iteration part and a result part.
-– Iteration part: print “Iteration :” in the first line. Then print 3 lines for every iteration as
-follows.
-∗ Iteration number (starts from 0);
-∗ The states in the CLOSED structure (in any order).
-∗ The successors in the order you put into the OPEN data structure in this iteration. When
-expanding a node, make sure multiple successors are placed in the OPEN data structure
-in this order: “(1 first) m fill > (2) n fill > (3) m empty > (4) n empty > (5) m pour
-> (6 last) n pour”. If there are no successors to add to OPEN in an iteration, print an
-empty line.
-– Result part: print “Result :” in the first line. Then print the solution path found. In the case
-the problem is unsolvable, print only ”Unsolvable” instead.
+
+• Output: Algorithm should be run in the order of BFS, DFS. Print the algorithm used (typical search algorithms BFS, DFS). 
+
+Each search algorithm should then output an iteration part and a result part.
+- Iteration part: print “Iteration :” in the first line. Then print 3 lines for every iteration as follows.
+- Iteration number (starts from 0).The states in the CLOSED structure (in any order).The successors in the order you put into the OPEN data structure in this iteration. 
+- When expanding a node, make sure multiple successors are placed in the OPEN data structure in this order: (1 first) m fill > (2) n fill > (3) m empty > (4) n empty > (5) m pour > (6 last) n pour. If there are no successors to add to OPEN in an iteration, print an empty line.
+-  Result part: print 'Result :' in the first line. Then print the solution path found. In the case the problem is unsolvable, print only 'Unsolvable' instead.
 
 Each state of two jugs is represented as a pair (x, y) where x is the amount of water in the m-liter
 jug, and y is that of the n-liter one. The solution path is a sequence of states (x, y) separated by one
